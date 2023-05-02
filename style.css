@@ -2,6 +2,8 @@
   background-color: #f0e68c;
   font-family: "Nunito", sans-serif;
   /* background-image: url("assets/temple.jpg"); */
+  --clr-neutral-100: hsla(0, 0%, 100%, 1);
+  --clr-primary-500: rgb(0, 0, 0);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:wght@300&display=swap");
@@ -24,6 +26,17 @@ img {
   height: 20vh;
   font-family: "Nunito", sans-serif;
   font-size: 30px;
+}
+
+.loc {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
 }
 
 .img {
@@ -65,4 +78,53 @@ img {
     height: auto;
     float: right;
   } */
+}
+
+.site-footer {
+  --logo-color: currentColor;
+  padding: 2em 0;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-primary-500);
+  text-align: center;
+}
+
+.page-header {
+  padding: 2em 0;
+}
+
+.page-header__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: var(--clr-neutral-900);
+  text-decoration: none;
+}
+
+.nav-list a:focus,
+.nav-list a:hover {
+  color: var(--clr-primary-400);
+  text-decoration: underline;
+}
+
+.text {
+  size: 10px;
+}
+
+.flex-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap, 1em);
+}
+
+.container {
+  margin-inline: auto;
+  padding-inline: 1.5em;
+  max-width: 72rem;
 }
