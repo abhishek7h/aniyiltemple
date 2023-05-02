@@ -33,3 +33,36 @@ img {
   align-items: center;
   justify-content: center;
 }
+
+.csimg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 20px;
+}
+
+.cshead {
+  margin-right: 100px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .csimg {
+    position: absolute;
+    top: 100px;
+    right: 70px;
+    width: 60%;
+    height: 20%;
+  }
+  /* .csimg,
+  .cshead {
+    max-width: 100%;
+    height: auto;
+    float: right;
+  } */
+}
