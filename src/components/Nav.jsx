@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
-import { CiMenuFries } from "react-icons/ci";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 // For smooth scroll
 // <Link spy={true} smooth={true} to="destination"
@@ -72,7 +72,11 @@ const Nav = () => {
         </div>
         <div>{click && content}</div>
         <button className="block sm:hidden transition" onClick={handleClick}>
-          {click ? <FaTimes /> : <CiMenuFries />}
+          {click ? (
+            <FaTimes className="text-2xl mt-1" />
+          ) : (
+            <GiHamburgerMenu className="text-2xl mt-1" />
+          )}
         </button>
       </div>
     </nav>
