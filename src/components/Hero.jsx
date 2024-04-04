@@ -74,8 +74,8 @@ const Hero = () => {
         </h1>
         <p className="text-xl">
           Aniyil Shree Krishna Swami temple is one of the oldest temples in
-          Vypin Island, Ernakulam, Kerala, managed by Cochin Devaswam Board. The
-          main diety is Shree Krishna. Upa Devathas are Ganapathi, Ayyappan,
+          Vypin Island, Ernakulam, Kerala, managed by Cochin Devaswom Board. The
+          main deity is Shree Krishna. Upa Devathas are Ganapathi, Ayyappan,
           Sivan & Durga.
         </p>
         <div className="mt-8 flex justify-center lg:justify-start space-x-2">
