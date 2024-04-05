@@ -67,8 +67,9 @@ const Hero = () => {
     <div className="lg:px-100 px-10 lg:py-0 py-20 text-center lg:text-left gap-5 flex flex-col lg:flex-row justify-between items-center">
       <div className="lg:w-1/2 flex flex-col justify-center lg:items-start items-center text-white">
         <h1 className="text-[52px] font-semibold mb-8 leading-normal text-center">
+          Welcome to the website of {""}
           <span className="text-amber-500 text-center">
-            Aniyil Srikrishna Swami Temple, Edavanakkad.
+            Aniyil Srikrishna Swami Temple
           </span>
         </h1>
         <p className="text-xl">
@@ -110,7 +111,7 @@ const Hero = () => {
         {/* Image for both desktop and mobile */}
         <div className="lg:mr-4">
           <img
-            src="https://scontent.fccj6-1.fna.fbcdn.net/v/t31.18172-8/415030_359448197462762_29979831_o.jpg?stp=dst-jpg_p720x720&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=QyobCXG25aUAX_E-Ln-&_nc_ht=scontent.fccj6-1.fna&oh=00_AfB0c0j8oqWB0xGgvU5UBcJbicPDOEDnTiPLTWU80V87jA&oe=6634C8E8"
+            src={require("../assets/temple.jpeg")}
             alt="The Temple"
             className="h-auto max-w-full"
           />

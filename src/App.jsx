@@ -34,7 +34,7 @@ import {
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import PoojaTimings from "./pages/PoojaTimings";
+import Pooja from "./pages/Pooja";
 import MainLayout from "./layouts/MainLayout";
 // import NotFoundPage from "./pages/NotFoundPage";
 
@@ -43,7 +43,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<MainLayout />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
-      <Route path="pooja" element={<PoojaTimings />} />
+      <Route path="pooja" element={<Pooja />} />
       {/* <Route path="*" element={<NotFoundPage />} /> */}
     </Route>
   )

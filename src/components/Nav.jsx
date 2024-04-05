@@ -47,7 +47,9 @@ const Nav = () => {
     <nav>
       <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4">
         <div className="flex items-center flex-1">
-          <span className="text-3xl font-bold">Aniyil Temple</span>
+          <span className="text-3xl font-bold hover:text-gray-200 cursor-pointer">
+            Aniyil Temple
+          </span>
         </div>
         <div className="lg:flex md:flex lg: flex-1 items center justify-end front-normal hidden">
           <div className="flex-10">

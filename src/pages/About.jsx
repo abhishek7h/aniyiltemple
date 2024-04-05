@@ -1,36 +1,28 @@
 const About = () => {
   return (
     <div>
-      <h1 className="flex items-center text-white text-xl text-center lg:text-4xl h-screen justify-center">
-        Work in progress. This content will be available soon!
+      <h1 className="text-3xl lg:text-5xl mt-10 flex items-center justify-center font-semibold leading-normal text-amber-500 underline hover:text-amber-400 text-center">
+        History of Aniyil Sree Krishna Swami Temple{" "}
       </h1>
-      {/* <h1 className="text-3xl lg:text-5xl mt-10 flex items-center justify-center font-semibold leading-normal text-amber-500 underline hover:text-amber-400 text-center">
-        About Aniyil Sree Krishna Swami Temple{" "}
-      </h1>
-      <p className="text-left text-white mt-10 text-2xl mr-5 ml-5 lg:mr-10 lg:ml-10 leading-normal">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vel
-        voluptates nesciunt eligendi sit asperiores dolores porro repellat
-        doloribus, reprehenderit libero hic deleniti numquam molestias, minus
-        ipsa accusamus, nisi deserunt. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Nulla quae explicabo quo iure in, ducimus modi at, ea
-        autem qui error eligendi. Laborum, voluptas? Dolores quibusdam
-        blanditiis ipsa quasi qui?
+      <p className="text-left text-white mt-10 text-2xl mr-5 ml-5 lg:mr-10 lg:ml-10 lg:px-10 leading-10">
+        അണിയിൽ ശ്രീകൃഷ്ണസ്വാമി ക്ഷേത്രത്തിന്റെ ചരിത്രം ഐതിഹ്യവുമായി
+        ബന്ധപ്പെട്ടിരിക്കുന്നു. ഇപ്പോൾ ക്ഷേത്രം ഇരിക്കുന്ന സ്ഥലം പണ്ട് നമ്പൂതിരി
+        ഇല്ലം ആയിരുന്നു. കഥകളിക്ക് പ്രസിദ്ധമായിരുന്നു ആ മന. ഒരിക്കൽ കഥകളിക്ക്
+        സമയമായിട്ടും കൃഷ്ണവേഷം ആടേണ്ട നടൻ എത്തിച്ചേർന്നിരുന്നില്ല. എല്ലാവരും
+        വിഷമിച്ചിരിക്കെ ഒരു അപരിചിതൻ വന്ന് കൃഷ്ണവേഷം കെട്ടാമെന്ന് പറയുകയും
+        അങ്ങിനെ കഥകളി നടക്കുകയും ചെയ്തു. എന്നാൽ കളി കഴിഞ്ഞ് അണിയറയിലേക് പോയ
+        കൃഷ്ണവേഷം ആടിയ അജ്ഞാതൻ പെട്ടെന് അദൃശ്യമായി. പിന്നീട് പ്രശ്നം വെച്ചപ്പോൾ
+        അത് സാക്ഷാൽ കൃഷ്ണഭഗവാൻ ആണെന്ന് കണ്ടുവത്രെ. കൃഷ്ണൻ അണിയറയിൽ മറഞ്ഞ
+        സ്ഥലത്തു കൊച്ചി രാജാവ് ക്ഷേത്രം നിർമിക്കുകയും കൃഷ്ണനെ പ്രതിഷ്ഠിക്കുകയും
+        ചെയ്തു. 'അണിയറ കൃഷ്ണനിൽ' നിന്നാണത്രെ ആണിയിൽ ക്ഷേത്രം ഉണ്ടായത്. ആ
+        സ്മരണിയിൽ അടുത്ത വർഷങ്ങളിലായി കഥകളി നടത്തി വരുന്നു.
       </p>
-      <h2 className="text-3xl lg:text-5xl mt-10 flex items-center justify-center font-semibold leading-normal text-amber-500 underline hover:text-amber-400 text-center">
-        History
-      </h2>
-      <p className="text-left text-white mt-10 text-2xl mr-5 ml-5 lg:mr-10 lg:ml-10 mb-10 leading-normal">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, non
-        ratione facere rem natus, odio esse distinctio excepturi hic dolore quam
-        maiores illo? Ipsa iusto magnam quidem saepe ab fugit! Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Fugit, reprehenderit. Earum a
-        reprehenderit vel! Excepturi temporibus sit minus minima amet velit a,
-        quidem praesentium voluptate veritatis, inventore maiores. Placeat,
-        labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Eligendi omnis quis facere dolore ipsum dicta nam a repellat ipsa.
-        Architecto, accusamus eveniet! Adipisci quas ipsa nesciunt reprehenderit
-        perspiciatis nam expedita? lorem
-      </p> */}
+      <div className="lg:w-25 mt-10 lg:flex justify-center items-center">
+        <img
+          src={require("../assets/temple2.jpeg")}
+          className="h-128 w-128 mt-10 mb-10"
+        />
+      </div>
     </div>
   );
 };
