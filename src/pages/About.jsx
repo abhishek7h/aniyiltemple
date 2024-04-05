@@ -17,12 +17,12 @@ const About = () => {
         ചെയ്തു. 'അണിയറ കൃഷ്ണനിൽ' നിന്നാണത്രെ ആണിയിൽ ക്ഷേത്രം ഉണ്ടായത്. ആ
         സ്മരണിയിൽ അടുത്ത വർഷങ്ങളിലായി കഥകളി നടത്തി വരുന്നു.
       </p>
-      <div className="lg:w-25 mt-10 lg:flex justify-center items-center">
+      {/* <div className="lg:w-25 mt-10 lg:flex justify-center items-center">
         <img
           src={require("../assets/temple2.jpeg")}
           className="h-128 w-128 mt-10 mb-10"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

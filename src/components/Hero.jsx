@@ -111,7 +111,8 @@ const Hero = () => {
         {/* Image for both desktop and mobile */}
         <div className="lg:mr-4">
           <img
-            src={require("../assets/temple.jpeg")}
+            // src={require("../assets/temple.jpeg")}
+            src="https://scontent.fccj6-1.fna.fbcdn.net/v/t31.18172-8/415030_359448197462762_29979831_o.jpg?stp=dst-jpg_p720x720&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Jz_6ryLyxX0Ab6C-tNH&_nc_ht=scontent.fccj6-1.fna&oh=00_AfDsTJu31wjhigEVI0urvpZ0qFiAiR5cTXe4fRoXwhTWiw&oe=6637A428"
             alt="The Temple"
             className="h-auto max-w-full"
           />
