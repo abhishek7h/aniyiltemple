@@ -66,17 +66,16 @@ const Hero = () => {
   return (
     <div className="lg:px-100 px-10 lg:py-0 py-20 text-center lg:text-left gap-5 flex flex-col lg:flex-row justify-between items-center">
       <div className="lg:w-1/2 flex flex-col justify-center lg:items-start items-center text-white">
-        <h1 className="text-[52px] font-semibold mb-8 leading-normal">
-          Welcome to the website of{" "}
-          <span className="text-amber-500">
-            Aniyil Shree Krishna Swami Temple
+        <h1 className="text-[52px] font-semibold mb-8 leading-normal text-center">
+          <span className="text-amber-500 text-center">
+            Aniyil Srikrishna Swami Temple, Edavanakkad.
           </span>
         </h1>
         <p className="text-xl">
-          Aniyil Shree Krishna Swami temple is one of the oldest temples in
-          Vypin Island, Ernakulam, Kerala, managed by Cochin Devaswom Board. The
-          main deity is Shree Krishna. Upa Devathas are Ganapathi, Ayyappan,
-          Sivan & Durga.
+          Aniyil Srikrishna Swami temple is one of the oldest temples in Vypin
+          Island, Ernakulam, Kerala, managed by Cochin Devaswom Board. The main
+          deity is Srikrishna. Upa Devathas are Ganapathi, Ayyappan, Sivan &
+          Durga.
         </p>
         <div className="mt-8 flex justify-center lg:justify-start space-x-2">
           <a

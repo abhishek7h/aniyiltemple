@@ -64,7 +64,7 @@ const Nav = () => {
               </NavLink>
               <NavLink to="/pooja" className={linkClass}>
                 <li className="hover:text-black transition border-b-2 hover:border-black cursor-pointer">
-                  Pooja Timings
+                  Pooja
                 </li>
               </NavLink>
             </ul>
