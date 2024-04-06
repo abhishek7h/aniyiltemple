@@ -36,6 +36,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Pooja from "./pages/Pooja";
 import MainLayout from "./layouts/MainLayout";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
 // import NotFoundPage from "./pages/NotFoundPage";
 
 const router = createBrowserRouter(
@@ -44,6 +46,8 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="pooja" element={<Pooja />} />
+      <Route path="gallery" element={<Gallery />} />
+      <Route path="contact" element={<Contact />} />
       {/* <Route path="*" element={<NotFoundPage />} /> */}
     </Route>
   )

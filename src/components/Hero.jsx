@@ -69,11 +69,11 @@ const Hero = () => {
         <h1 className="text-[52px] font-semibold mb-8 leading-normal text-center">
           Welcome to the website of {""}
           <span className="text-amber-500 text-center">
-            Aniyil Srikrishna Swami Temple
+            Aniyil Sreekrishna Swami Temple
           </span>
         </h1>
         <p className="text-xl">
-          Aniyil Srikrishna Swami temple is one of the oldest temples in Vypin
+          Aniyil Sreekrishna Swami temple is one of the oldest temples in Vypin
           Island, Ernakulam, Kerala, managed by Cochin Devaswom Board. The main
           deity is Srikrishna. Upa Devathas are Ganapathi, Ayyappan, Sivan &
           Durga.

@@ -1,10 +1,12 @@
-const PoojaTimings = () => {
+const Pooja = () => {
   return (
     <div className="flex flex-col items-center mt-10 text-white text-2xl">
       <div className="flex flex-col mb-6 shadow-lg">
         <div className="block bg-transparent p-4 w-full overflow-x-auto">
-          <div className="flex flex-col items-center text-4xl mb-10">
-            <h1>പൂജ സമയങ്ങൾ</h1>
+          <div>
+            <h1 className="text-3xl lg:text-5xl mb-10 flex items-center justify-center font-semibold leading-normal text-amber-500 underline hover:text-amber-400 text-center">
+              പൂജ സമയങ്ങൾ
+            </h1>
           </div>
           <table className="">
             <thead>
@@ -96,4 +98,4 @@ const PoojaTimings = () => {
   );
 };
 
-export default PoojaTimings;
+export default Pooja;

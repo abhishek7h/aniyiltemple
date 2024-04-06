@@ -36,7 +36,17 @@ const Nav = () => {
           </NavLink>
           <NavLink to="/pooja" onClick={closeNav}>
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              Pooja Timings
+              Pooja
+            </li>
+          </NavLink>
+          <NavLink to="/gallery" onClick={closeNav}>
+            <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+              Gallery
+            </li>
+          </NavLink>
+          <NavLink to="/contact" onClick={closeNav}>
+            <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+              Contact
             </li>
           </NavLink>
         </ul>
@@ -67,6 +77,16 @@ const Nav = () => {
               <NavLink to="/pooja" className={linkClass}>
                 <li className="hover:text-black transition border-b-2 hover:border-black cursor-pointer">
                   Pooja
+                </li>
+              </NavLink>
+              <NavLink to="/gallery" className={linkClass}>
+                <li className="hover:text-black transition border-b-2 hover:border-black cursor-pointer">
+                  Gallery
+                </li>
+              </NavLink>
+              <NavLink to="/contact" className={linkClass}>
+                <li className="hover:text-black transition border-b-2 hover:border-black cursor-pointer">
+                  Contact
                 </li>
               </NavLink>
             </ul>
