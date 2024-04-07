@@ -17,7 +17,7 @@ const Contact = () => {
         </p>
       </div>
       <h1 className="text-3xl mb-10 mt-10 flex items-center justify-center font-semibold leading-normal text-white text-center">
-        Cochin Dewaswom Board Officer - M.R. Rajeev
+        Cochin Dewaswom Board Officer - A.R. Rajeev
       </h1>
       <h1 className="text-white mt-10 text-3xl mr-5 ml-5 lg:mr-10 lg:ml-10 lg:px-10 leading-10 text-center">
         Aniyil Srikrishna Swami Temple Advisory Committee (REG NO: KUS723/2022)
@@ -34,7 +34,7 @@ const Contact = () => {
         <div className="border w-auto mb-5 mt-5">
           Bank A/c: ANIYIL SREEKRISHNA SWAMI KSHETHROPADESAKA SAMITHI <br />
           A/c No. 0024050000000511 <br />
-          Bank: DHANLAXMI BANK, KUZUPALLI BRANCH <br />
+          Bank: DHANLAXMI BANK, KUZHUPALLY BRANCH <br />
           IFSC: DLXB0000024
         </div>
       </p>
