@@ -112,7 +112,7 @@ const Hero = () => {
         <div className="lg:mr-4">
           <img
             // src={require("../assets/temple.jpeg")}
-            src="https://scontent.fccj6-1.fna.fbcdn.net/v/t31.18172-8/415030_359448197462762_29979831_o.jpg?stp=dst-jpg_p720x720&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Jz_6ryLyxX0Ab6C-tNH&_nc_ht=scontent.fccj6-1.fna&oh=00_AfDsTJu31wjhigEVI0urvpZ0qFiAiR5cTXe4fRoXwhTWiw&oe=6637A428"
+            src="https://scontent.fccj6-1.fna.fbcdn.net/v/t39.30808-6/434759652_122100653816266533_4818696604508498561_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=ZcodwHvC7bYQ7kNvgE7Bf4I&_nc_zt=23&_nc_ht=scontent.fccj6-1.fna&_nc_gid=Ahcx8vPNE50Yi-IMwLEaq9E&oh=00_AYD7094kpZK-HfZoIkbiSrw8F-ykJsKk9omgajoX8O4SUg&oe=678AF4CC"
             alt="The Temple"
             className="h-auto max-w-full"
           />
