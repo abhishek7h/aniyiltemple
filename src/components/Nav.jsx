@@ -119,15 +119,13 @@ const Nav = () => {
         </div>
         <div>{content}</div>
         <button
-          className="lg:hidden block text-white hover:text-amber-200 transition-colors duration-200 p-2 rounded-lg hover:bg-white/10 active:scale-95 z-50"
+          className={`lg:hidden block text-white hover:text-amber-200 transition-colors duration-200 p-2 rounded-lg hover:bg-white/10 active:scale-95 z-50 ${
+            click ? "opacity-0 pointer-events-none" : "opacity-100"
+          }`}
           onClick={handleClick}
           aria-label="Toggle menu"
         >
-          {click ? (
-            <FaTimes className="text-2xl" />
-          ) : (
-            <GiHamburgerMenu className="text-2xl" />
-          )}
+          <GiHamburgerMenu className="text-2xl" />
         </button>
       </div>
     </nav>
