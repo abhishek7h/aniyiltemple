@@ -14,7 +14,7 @@ const About = () => {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
           {/* Text Content */}
           <div className="flex-1">
-            <p className="text-white text-lg lg:text-xl leading-relaxed font-malayalam">
+            <p className="text-slate-800 text-lg lg:text-xl leading-relaxed font-malayalam">
               അണിയിൽ ശ്രീകൃഷ്ണസ്വാമി ക്ഷേത്രത്തിന്റെ ചരിത്രം ഐതിഹ്യവുമായി
               ബന്ധപ്പെട്ടിരിക്കുന്നു. ഇപ്പോൾ ക്ഷേത്രം ഇരിക്കുന്ന സ്ഥലം പണ്ട് നമ്പൂതിരി
               ഇല്ലം ആയിരുന്നു. കഥകളിക്ക് പ്രസിദ്ധമായിരുന്നു ആ മന. ഒരിക്കൽ കഥകളിക്ക്

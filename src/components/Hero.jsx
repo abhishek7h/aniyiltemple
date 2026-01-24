@@ -66,21 +66,21 @@ const Hero = () => {
   return (
     <div className="lg:px-20 px-6 lg:py-12 py-12 flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12">
       {/* Left Content Section */}
-      <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-white space-y-6 lg:space-y-6">
+      <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-slate-800 space-y-6 lg:space-y-6">
         {/* Main Title */}
         <div className="text-center lg:text-left">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-3">
-            <span className="text-amber-500 drop-shadow-lg">Aniyil</span>{" "}
-            <span className="text-white drop-shadow-md">Sreekrishna</span>
+            <span className="text-amber-500">Aniyil</span>{" "}
+            <span className="text-slate-800">Sreekrishna</span>
           </h1>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-semibold text-white/95 drop-shadow-md">
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-semibold text-slate-800">
             Swami Temple
           </h2>
           <div className="w-20 h-1 bg-amber-500 mx-auto lg:mx-0 mt-4 rounded-full"></div>
         </div>
 
         {/* Description */}
-        <p className="text-lg sm:text-xl text-gray-200 leading-relaxed text-center lg:text-left max-w-2xl">
+        <p className="text-lg sm:text-xl text-slate-700 leading-relaxed text-center lg:text-left max-w-2xl">
           Aniyil Sreekrishna Swami temple is one of the oldest temples in Vypin
           Island, Ernakulam, Kerala, managed by Cochin Devaswom Board. The main
           deity is Srikrishna. Upa Devathas are Ganapathi, Ayyappan, Sivan &
@@ -88,21 +88,21 @@ const Hero = () => {
         </p>
 
         {/* Location Card */}
-        <div className="bg-white/5 backdrop-blur-sm border border-amber-500/30 rounded-xl px-6 py-4 w-full max-w-md hover:bg-white/10 hover:border-amber-500/50 transition-all duration-300">
+        <div className="bg-white border border-amber-500/30 rounded-xl px-6 py-4 w-full max-w-md hover:bg-amber-50/50 hover:border-amber-500/50 transition-all duration-300 shadow-md">
           <a
             href="https://www.google.com/maps/dir//36J7%2B453+Aniyal+East+Road,+East+road,+Edavanakkad,+Kochi,+Kerala+682502/@10.0803023,76.1305356,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3b081112a6042e7f:0xa152d0bcf7085ae5!2m2!1d76.2129375!2d10.0803125?entry=ttu"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center lg:justify-start group"
           >
-            <div className="bg-amber-500/20 p-3 rounded-full mr-4 group-hover:bg-amber-500/30 transition-colors duration-200">
-              <FiMapPin className="text-amber-400 text-xl" />
+            <div className="bg-amber-500/10 p-3 rounded-full mr-4 group-hover:bg-amber-500/20 transition-colors duration-200">
+              <FiMapPin className="text-amber-600 text-xl" />
             </div>
             <div>
-              <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">
+              <p className="text-xs text-slate-500 uppercase tracking-wide mb-1">
                 Location
               </p>
-              <p className="text-white font-medium text-lg group-hover:text-amber-400 transition-colors duration-200">
+              <p className="text-slate-800 font-medium text-lg group-hover:text-amber-600 transition-colors duration-200">
                 Edavannakad, Kochi, Kerala
               </p>
             </div>
@@ -111,7 +111,7 @@ const Hero = () => {
 
         {/* Social Links */}
         <div className="flex flex-col items-center lg:items-start space-y-3 w-full max-w-md">
-          <p className="text-sm text-gray-400 uppercase tracking-wide">
+          <p className="text-sm text-slate-600 uppercase tracking-wide">
             Follow Us
           </p>
           <div className="flex flex-col sm:flex-row gap-3 w-full">
@@ -119,7 +119,7 @@ const Hero = () => {
               href="https://www.facebook.com/profile.php?id=61558311322107"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 bg-white/5 backdrop-blur-sm border border-amber-500/30 text-amber-400 hover:text-white hover:bg-amber-500/20 hover:border-amber-500 rounded-lg px-6 py-3 transition-all duration-300 shadow-lg hover:shadow-amber-500/20 w-full sm:w-auto"
+              className="flex items-center justify-center gap-3 bg-white border border-amber-500/30 text-amber-600 hover:text-white hover:bg-amber-500 hover:border-amber-500 rounded-lg px-6 py-3 transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto"
               aria-label="Facebook Page"
             >
               <FaFacebook className="text-xl flex-shrink-0" />
@@ -129,7 +129,7 @@ const Hero = () => {
               href="https://www.facebook.com/groups/446332617847433"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 bg-white/5 backdrop-blur-sm border border-amber-500/30 text-amber-400 hover:text-white hover:bg-amber-500/20 hover:border-amber-500 rounded-lg px-6 py-3 transition-all duration-300 shadow-lg hover:shadow-amber-500/20 w-full sm:w-auto"
+              className="flex items-center justify-center gap-3 bg-white border border-amber-500/30 text-amber-600 hover:text-white hover:bg-amber-500 hover:border-amber-500 rounded-lg px-6 py-3 transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto"
               aria-label="Facebook Group"
             >
               <MdGroups className="text-xl flex-shrink-0" />

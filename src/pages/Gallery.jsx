@@ -144,7 +144,7 @@ const Gallery = () => {
           {validImages.map(({ imageLink, caption }, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-xl bg-white/5 backdrop-blur-sm border border-amber-500/20 hover:border-amber-500/50 transition-all duration-300 cursor-pointer hover:shadow-2xl hover:shadow-amber-500/20"
+              className="group relative overflow-hidden rounded-xl bg-white border border-amber-500/20 hover:border-amber-500/50 transition-all duration-300 cursor-pointer hover:shadow-2xl hover:shadow-amber-500/20 shadow-md"
               onClick={() => setSelectedImage({ imageLink, caption })}
             >
               <div className="aspect-square overflow-hidden">
@@ -182,15 +182,15 @@ const Gallery = () => {
             >
               <FiX className="text-3xl" />
             </button>
-            <div className="bg-white/5 rounded-xl overflow-hidden border border-amber-500/30">
+            <div className="bg-white rounded-xl overflow-hidden border border-amber-500/30 shadow-2xl">
               <img
                 className="w-full h-auto max-h-[80vh] object-contain"
                 src={selectedImage.imageLink}
                 alt={selectedImage.caption || "Gallery image"}
               />
               {selectedImage.caption && (
-                <div className="bg-white/10 backdrop-blur-sm p-4 border-t border-amber-500/30">
-                  <p className="text-white text-lg font-medium text-center">
+                <div className="bg-amber-50/50 p-4 border-t border-amber-500/30">
+                  <p className="text-slate-800 text-lg font-medium text-center">
                     {selectedImage.caption}
                   </p>
                 </div>
