@@ -64,57 +64,68 @@ import { MdGroups } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <div className="lg:px-100 px-10 lg:py-0 py-20 text-center lg:text-left gap-5 flex flex-col lg:flex-row justify-between items-center">
-      <div className="lg:w-1/2 flex flex-col justify-center lg:items-start items-center text-white">
-        <h1 className="text-[52px] font-semibold mb-8 leading-normal text-center">
-          Welcome to the website of {""}
-          <span className="text-amber-500 text-center">
-            Aniyil Sreekrishna Swami Temple
-          </span>
+    <div className="lg:px-20 px-6 lg:py-20 py-12 min-h-[calc(100vh-80px)] flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16">
+      {/* Left Content Section */}
+      <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-white space-y-6">
+        {/* Main Title */}
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-center lg:text-left">
+          <span className="text-amber-500">Aniyil</span>{" "}
+          <span className="text-white">Sreekrishna</span>
+          <br />
+          <span className="text-white">Swami Temple</span>
         </h1>
-        <p className="text-xl">
+
+        {/* Description */}
+        <p className="text-lg sm:text-xl text-gray-200 leading-relaxed text-center lg:text-left max-w-2xl">
           Aniyil Sreekrishna Swami temple is one of the oldest temples in Vypin
           Island, Ernakulam, Kerala, managed by Cochin Devaswom Board. The main
           deity is Srikrishna. Upa Devathas are Ganapathi, Ayyappan, Sivan &
           Durga.
         </p>
-        <div className="mt-8 flex justify-center lg:justify-start space-x-2">
+
+        {/* Location */}
+        <div className="flex items-center justify-center lg:justify-start text-white/90 text-lg sm:text-xl">
+          <FiMapPin className="mr-2 text-amber-500" />
+          <a
+            href="https://www.google.com/maps/dir//36J7%2B453+Aniyal+East+Road,+East+road,+Edavanakkad,+Kochi,+Kerala+682502/@10.0803023,76.1305356,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3b081112a6042e7f:0xa152d0bcf7085ae5!2m2!1d76.2129375!2d10.0803125?entry=ttu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-amber-500 transition-colors duration-200 underline underline-offset-2"
+          >
+            Edavannakad, Kochi, Kerala
+          </a>
+        </div>
+
+        {/* Social Links */}
+        <div className="flex justify-center lg:justify-start space-x-4 pt-2">
           <a
             href="https://www.facebook.com/profile.php?id=61558311322107"
-            className="text-amber-500 hover:text-amber-400 rounded-full glow p-2"
             target="_blank"
+            rel="noopener noreferrer"
+            className="text-amber-500 hover:text-amber-400 hover:bg-amber-500/10 rounded-full p-3 transition-all duration-200"
+            aria-label="Facebook Page"
           >
-            <FaFacebook className="text-[28px]" />
+            <FaFacebook className="text-2xl" />
           </a>
           <a
             href="https://www.facebook.com/groups/446332617847433"
-            className="text-amber-500 hover:text-amber-400 rounded-full glow p-2"
             target="_blank"
+            rel="noopener noreferrer"
+            className="text-amber-500 hover:text-amber-400 hover:bg-amber-500/10 rounded-full p-3 transition-all duration-200"
+            aria-label="Facebook Group"
           >
-            <MdGroups className="text-[28px]" />
+            <MdGroups className="text-2xl" />
           </a>
         </div>
-        <p className="text-3xl font-semibold text-white mt-4 flex items-center">
-          <FiMapPin className="mr-2" />
-          <span>
-            <a
-              href="https://www.google.com/maps/dir//36J7%2B453+Aniyal+East+Road,+East+road,+Edavanakkad,+Kochi,+Kerala+682502/@10.0803023,76.1305356,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3b081112a6042e7f:0xa152d0bcf7085ae5!2m2!1d76.2129375!2d10.0803125?entry=ttu"
-              target="_blank"
-              className="cursor-pointer underline hover:text-amber-500"
-            >
-              Edavannakad
-            </a>
-          </span>
-        </p>
       </div>
-      <div className="lg:w-25 mt-10 lg:flex justify-center items-center">
-        {/* Image for both desktop and mobile */}
-        <div className="lg:mr-4">
+
+      {/* Right Image Section */}
+      <div className="lg:w-1/2 flex justify-center items-center">
+        <div className="relative w-full max-w-md lg:max-w-lg">
           <img
-            // src={require("../assets/temple.jpeg")}
             src="https://scontent.fcok1-1.fna.fbcdn.net/v/t39.30808-1/434759652_122100653816266533_4818696604508498561_n.jpg?stp=c147.0.785.785a_dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Ic40wxOXGM8Q7kNvwF3RorV&_nc_oc=AdmzUM0NALMkF6zI4AZi5ebeYKUo8YeomzlEuKF0Y10MdkMF3EwiCuRMqjcrY_cV0Ndm1Tl-hwET0SFQReFhrfba&_nc_zt=24&_nc_ht=scontent.fcok1-1.fna&_nc_gid=inh5XkWu0M0JkAKfyGtHCw&oh=00_AfrJ9R328cKvZni2EUFpY2-fULG1cqAPNqtn14EB6rPivg&oe=697A82AF"
-            alt="The Temple"
-            className="h-auto max-w-full"
+            alt="Aniyil Sreekrishna Swami Temple"
+            className="w-full h-auto rounded-lg shadow-2xl object-cover"
           />
         </div>
       </div>
