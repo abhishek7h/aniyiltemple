@@ -19,7 +19,7 @@ const About = () => {
       </p>
       <div className="lg:w-25 mt-10 lg:flex justify-center items-center">
         <img
-          src="https://scontent.fccj6-1.fna.fbcdn.net/v/t39.30808-6/435967413_122102685110266533_1888300411269566090_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MdDfGisojlgAb5lRnA2&_nc_ht=scontent.fccj6-1.fna&oh=00_AfBoV1yDnn376rmpBeCuHbyKuDGU4VGxiJtJQgtGfW9aDA&oe=661737C9"
+          src="https://scontent.fcok1-1.fna.fbcdn.net/v/t39.30808-6/469364929_122162187848266533_376186102554326843_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=4aVJOF3ay4IQ7kNvwEtIpBb&_nc_oc=AdmFkoDvsjBQKTPa1Ev-a9J18FB1KZGQYax1Wj5cnSk0whjZzMSoUe9oWhqnF9hk9V809v0AD-M5qXJrxj7Uw63_&_nc_zt=23&_nc_ht=scontent.fcok1-1.fna&_nc_gid=WQM21gscVUQtHTndKETBRg&oh=00_AfrP-Yf_YUNI2URc_vFWmXT2nRw9TjWEMSKcHJCmlrV5iw&oe=697A8531"
           className="h-128 w-128 mt-10 mb-10"
         />
       </div>

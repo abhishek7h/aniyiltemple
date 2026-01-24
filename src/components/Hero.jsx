@@ -112,7 +112,7 @@ const Hero = () => {
         <div className="lg:mr-4">
           <img
             // src={require("../assets/temple.jpeg")}
-            src="https://scontent.fccj6-1.fna.fbcdn.net/v/t39.30808-6/434759652_122100653816266533_4818696604508498561_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=ZcodwHvC7bYQ7kNvgE7Bf4I&_nc_zt=23&_nc_ht=scontent.fccj6-1.fna&_nc_gid=Ahcx8vPNE50Yi-IMwLEaq9E&oh=00_AYD7094kpZK-HfZoIkbiSrw8F-ykJsKk9omgajoX8O4SUg&oe=678AF4CC"
+            src="https://scontent.fcok1-1.fna.fbcdn.net/v/t39.30808-1/434759652_122100653816266533_4818696604508498561_n.jpg?stp=c147.0.785.785a_dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Ic40wxOXGM8Q7kNvwF3RorV&_nc_oc=AdmzUM0NALMkF6zI4AZi5ebeYKUo8YeomzlEuKF0Y10MdkMF3EwiCuRMqjcrY_cV0Ndm1Tl-hwET0SFQReFhrfba&_nc_zt=24&_nc_ht=scontent.fcok1-1.fna&_nc_gid=inh5XkWu0M0JkAKfyGtHCw&oh=00_AfrJ9R328cKvZni2EUFpY2-fULG1cqAPNqtn14EB6rPivg&oe=697A82AF"
             alt="The Temple"
             className="h-auto max-w-full"
           />
