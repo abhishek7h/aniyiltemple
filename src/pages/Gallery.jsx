@@ -1,20 +1,29 @@
+import { useState } from "react";
+import { FiX } from "react-icons/fi";
+
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const data = [
     {
       imageLink:
         "https://scontent.fccj6-1.fna.fbcdn.net/v/t39.30808-6/435946186_122102655686266533_3594640317059543184_n.jpg?stp=dst-jpg_s720x720&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=IMAzXnCxTn0Ab4sUimJ&_nc_ht=scontent.fccj6-1.fna&oh=00_AfB2UzdRfBVyAO1jMxnmF1P1xSez8sSO_fSTKUv_L4vsQg&oe=6616C640",
+      caption: "Temple Festival Celebration",
     },
     {
       imageLink:
         "https://scontent.fcok10-4.fna.fbcdn.net/v/t39.30808-6/435975667_122102654348266533_4365449880654075834_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yf3LOYaa4dwAb7dh3l1&_nc_ht=scontent.fcok10-4.fna&oh=00_AfCiKaDWXezXebHppQNBSRqW5RojECYe2LEHTZNs-Sb86A&oe=6616D1D0",
+      caption: "Temple Architecture",
     },
     {
       imageLink:
         "https://scontent.fcok10-4.fna.fbcdn.net/v/t39.30808-6/436617527_122102684474266533_2050693614442843294_n.jpg?stp=dst-jpg_p180x540&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=0gW9wPpWcfsAb6qCZGO&_nc_ht=scontent.fcok10-4.fna&oh=00_AfCUPZJ26beKcAPyTv_L6VpnXRRcKmjYuof36gfXXyU8Nw&oe=6616EDB8",
+      caption: "Devotees Gathering",
     },
     {
       imageLink:
         "https://scontent.fcok10-1.fna.fbcdn.net/v/t39.30808-6/435967413_122102685110266533_1888300411269566090_n.jpg?stp=dst-jpg_s720x720&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MdDfGisojlgAb5L1S2Q&_nc_ht=scontent.fcok10-1.fna&oh=00_AfC0h7VOBUhoK_hLXYgWnBs-Q48Ho4ctH8nK0VqC0Q_Ccg&oe=6616C749",
+      caption: "Temple Rituals",
     },
     {
       imageLink:
@@ -116,24 +125,80 @@ const Gallery = () => {
       imageLink: "",
     },
   ];
+  // Filter out empty images
+  const validImages = data.filter((item) => item.imageLink && item.imageLink.trim() !== "");
+
   return (
-    <div className="mt-10 mb-5 mr-5 ml-5 ">
-      <div>
-        <h1 className="text-3xl lg:text-5xl mb-10 flex items-center justify-center font-semibold leading-normal text-amber-500 underline hover:text-amber-400 text-center">
-          Gallery
-        </h1>
+    <div className="min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        {/* Heading */}
+        <div className="mb-12">
+          <h1 className="text-4xl lg:text-5xl font-bold text-amber-500 text-center mb-4">
+            Gallery
+          </h1>
+          <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
+        </div>
+
+        {/* Gallery Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {validImages.map(({ imageLink, caption }, index) => (
+            <div
+              key={index}
+              className="group relative overflow-hidden rounded-xl bg-white/5 backdrop-blur-sm border border-amber-500/20 hover:border-amber-500/50 transition-all duration-300 cursor-pointer hover:shadow-2xl hover:shadow-amber-500/20"
+              onClick={() => setSelectedImage({ imageLink, caption })}
+            >
+              <div className="aspect-square overflow-hidden">
+                <img
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  src={imageLink}
+                  alt={caption || `Gallery image ${index + 1}`}
+                  loading="lazy"
+                />
+              </div>
+              {caption && (
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4">
+                  <p className="text-white font-medium text-sm lg:text-base">
+                    {caption}
+                  </p>
+                </div>
+              )}
+              <div className="absolute inset-0 bg-amber-500/0 group-hover:bg-amber-500/10 transition-colors duration-300"></div>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-        {data.map(({ imageLink }, index) => (
-          <div key={index}>
-            <img
-              className="h-full w-full max-w-full rounded-lg object-cover object-center"
-              src={imageLink}
-              alt="gallery-photo"
-            />
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-5xl max-h-[90vh] w-full">
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute -top-12 right-0 text-white hover:text-amber-400 transition-colors duration-200 p-2 hover:bg-white/10 rounded-full"
+              aria-label="Close"
+            >
+              <FiX className="text-3xl" />
+            </button>
+            <div className="bg-white/5 rounded-xl overflow-hidden border border-amber-500/30">
+              <img
+                className="w-full h-auto max-h-[80vh] object-contain"
+                src={selectedImage.imageLink}
+                alt={selectedImage.caption || "Gallery image"}
+              />
+              {selectedImage.caption && (
+                <div className="bg-white/10 backdrop-blur-sm p-4 border-t border-amber-500/30">
+                  <p className="text-white text-lg font-medium text-center">
+                    {selectedImage.caption}
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
-        ))}
-      </div>
+        </div>
+      )}
     </div>
   );
 };
