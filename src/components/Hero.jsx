@@ -58,7 +58,7 @@
 
 // export default Hero;
 
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { MdGroups } from "react-icons/md";
 
@@ -134,6 +134,16 @@ const Hero = () => {
             >
               <MdGroups className="text-xl flex-shrink-0" />
               <span className="font-medium">Facebook Group</span>
+            </a>
+            <a
+              href="https://chat.whatsapp.com/E7qlpeEZ5Cv0FqEfmqErB2?mode=gi_t"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 bg-white border border-amber-500/30 text-amber-600 hover:text-white hover:bg-amber-500 hover:border-amber-500 rounded-lg px-6 py-3 transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto"
+              aria-label="WhatsApp Group"
+            >
+              <FaWhatsapp className="text-xl flex-shrink-0" />
+              <span className="font-medium">WhatsApp Group</span>
             </a>
           </div>
         </div>

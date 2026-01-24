@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { MdGroups } from "react-icons/md";
 
@@ -51,6 +51,15 @@ const Footer = () => {
                   aria-label="Facebook Group"
                 >
                   <MdGroups className="text-xl" />
+                </a>
+                <a
+                  href="https://chat.whatsapp.com/E7qlpeEZ5Cv0FqEfmqErB2?mode=gi_t"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-500 hover:text-amber-600 hover:bg-amber-500/10 rounded-full p-2 transition-all duration-200"
+                  aria-label="WhatsApp Group"
+                >
+                  <FaWhatsapp className="text-xl" />
                 </a>
               </div>
             </div>
