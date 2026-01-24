@@ -20,8 +20,8 @@ const Nav = () => {
 
   const mobileLinkClass = ({ isActive }) =>
     isActive
-      ? "text-white font-semibold bg-white/10 border-l-4 border-white"
-      : "text-white/90 hover:text-white hover:bg-white/5 transition-all duration-200";
+      ? "block text-white font-semibold bg-white/10 border-l-4 border-white"
+      : "block text-white/90 hover:text-white hover:bg-white/5 transition-all duration-200";
 
   return (
     <nav className="relative z-50 bg-amber-500">
@@ -95,19 +95,40 @@ const Nav = () => {
 
           {/* Menu items */}
           <nav className="py-4">
-            <NavLink to="/" onClick={closeNav} className={mobileLinkClass}>
+            <NavLink
+              to="/"
+              onClick={closeNav}
+              className={mobileLinkClass}
+              end
+            >
               <span className="block px-6 py-4">Home</span>
             </NavLink>
-            <NavLink to="/about" onClick={closeNav} className={mobileLinkClass}>
+            <NavLink
+              to="/about"
+              onClick={closeNav}
+              className={mobileLinkClass}
+            >
               <span className="block px-6 py-4">About</span>
             </NavLink>
-            <NavLink to="/pooja" onClick={closeNav} className={mobileLinkClass}>
+            <NavLink
+              to="/pooja"
+              onClick={closeNav}
+              className={mobileLinkClass}
+            >
               <span className="block px-6 py-4">Pooja</span>
             </NavLink>
-            <NavLink to="/gallery" onClick={closeNav} className={mobileLinkClass}>
+            <NavLink
+              to="/gallery"
+              onClick={closeNav}
+              className={mobileLinkClass}
+            >
               <span className="block px-6 py-4">Gallery</span>
             </NavLink>
-            <NavLink to="/contact" onClick={closeNav} className={mobileLinkClass}>
+            <NavLink
+              to="/contact"
+              onClick={closeNav}
+              className={mobileLinkClass}
+            >
               <span className="block px-6 py-4">Contact</span>
             </NavLink>
           </nav>
