@@ -4,7 +4,7 @@ const About = () => {
       <h1 className="text-3xl lg:text-5xl mt-10 flex items-center justify-center font-semibold leading-normal text-amber-500 underline hover:text-amber-400 text-center">
         History of Aniyil Sreekrishna Swami Temple{" "}
       </h1>
-      <p className="text-left text-white mt-10 text-2xl mr-5 ml-5 lg:mr-10 lg:ml-10 lg:px-10 leading-10">
+      <p className="text-left text-white mt-10 text-2xl mr-5 ml-5 lg:mr-10 lg:ml-10 lg:px-10 leading-10 font-malayalam">
         അണിയിൽ ശ്രീകൃഷ്ണസ്വാമി ക്ഷേത്രത്തിന്റെ ചരിത്രം ഐതിഹ്യവുമായി
         ബന്ധപ്പെട്ടിരിക്കുന്നു. ഇപ്പോൾ ക്ഷേത്രം ഇരിക്കുന്ന സ്ഥലം പണ്ട് നമ്പൂതിരി
         ഇല്ലം ആയിരുന്നു. കഥകളിക്ക് പ്രസിദ്ധമായിരുന്നു ആ മന. ഒരിക്കൽ കഥകളിക്ക്

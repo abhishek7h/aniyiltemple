@@ -1,6 +1,6 @@
 const Pooja = () => {
   return (
-    <div className="flex flex-col items-center mt-10 text-white text-2xl">
+    <div className="flex flex-col items-center mt-10 text-white text-2xl font-malayalam leading-relaxed">
       <div className="flex flex-col mb-6 shadow-lg">
         <div className="block bg-transparent p-4 w-full overflow-x-auto">
           <div>
