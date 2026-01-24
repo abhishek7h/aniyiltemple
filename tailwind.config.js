@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        malayalam: ["Gayathri", "sans-serif"], // or 'Uroob'
+        malayalam: ["Noto Serif Malayalam", "sans-serif"],
       },
     },
   },
