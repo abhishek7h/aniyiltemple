@@ -64,100 +64,115 @@ import { MdGroups } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <div className="lg:px-20 px-6 lg:py-12 py-12 flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12">
-      {/* Left Content Section */}
-      <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-slate-800 space-y-6 lg:space-y-6">
-        {/* Main Title */}
-        <div className="text-center lg:text-left">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-3">
-            <span className="text-amber-500">Aniyil</span>{" "}
-            <span className="text-slate-800">Sreekrishna</span>
-          </h1>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-semibold text-slate-800">
-            Swami Temple
-          </h2>
-          <div className="w-20 h-1 bg-amber-500 mx-auto lg:mx-0 mt-4 rounded-full"></div>
-        </div>
+    <div className="flex flex-col">
+      {/* Top Content Section - All Text and Components */}
+      <div className="lg:px-20 px-6 lg:py-12 py-12 flex flex-col justify-center items-center">
+        <div className="w-full max-w-4xl flex flex-col justify-center items-center text-slate-800 space-y-6">
+          {/* Main Title */}
+          <div className="text-center">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-3">
+              <span className="text-amber-500">Aniyil</span>{" "}
+              <span className="text-slate-800">Sreekrishna</span>
+            </h1>
+            <h2 className="text-3xl sm:text-4xl lg:text-4xl font-semibold text-slate-800">
+              Swami Temple
+            </h2>
+            <div className="w-20 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+          </div>
 
-        {/* Description */}
-        <p className="text-lg sm:text-xl text-slate-700 leading-relaxed text-center lg:text-left max-w-2xl">
-          Aniyil Sreekrishna Swami temple is one of the oldest temples in Vypin
-          Island, Ernakulam, Kerala, managed by Cochin Devaswom Board. The main
-          deity is Srikrishna. Upa Devathas are Ganapathi, Ayyappan, Sivan &
-          Durga.
-        </p>
-
-        {/* Location Card */}
-        <div className="bg-white border border-amber-500/30 rounded-xl px-6 py-4 w-full max-w-md hover:bg-amber-50/50 hover:border-amber-500/50 transition-all duration-300 shadow-md">
-          <a
-            href="https://www.google.com/maps/dir//36J7%2B453+Aniyal+East+Road,+East+road,+Edavanakkad,+Kochi,+Kerala+682502/@10.0803023,76.1305356,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3b081112a6042e7f:0xa152d0bcf7085ae5!2m2!1d76.2129375!2d10.0803125?entry=ttu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center lg:justify-start group"
-          >
-            <div className="bg-amber-500/10 p-3 rounded-full mr-4 group-hover:bg-amber-500/20 transition-colors duration-200">
-              <FiMapPin className="text-amber-600 text-xl" />
-            </div>
-            <div>
-              <p className="text-xs text-slate-500 uppercase tracking-wide mb-1">
-                Location
-              </p>
-              <p className="text-slate-800 font-medium text-lg group-hover:text-amber-600 transition-colors duration-200">
-                Edavannakad, Kochi, Kerala
-              </p>
-            </div>
-          </a>
-        </div>
-
-        {/* Social Links */}
-        <div className="flex flex-col items-center lg:items-start space-y-3 w-full max-w-md">
-          <p className="text-sm text-slate-600 uppercase tracking-wide">
-            Follow Us
+          {/* Description */}
+          <p className="text-lg sm:text-xl text-slate-700 leading-relaxed text-center max-w-2xl">
+            Aniyil Sreekrishna Swami temple is one of the oldest temples in Vypin
+            Island, Ernakulam, Kerala, managed by Cochin Devaswom Board. The main
+            deity is Srikrishna. Upa Devathas are Ganapathi, Ayyappan, Sivan &
+            Durga.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 w-full">
+
+          {/* Location Card */}
+          <div className="bg-white border border-amber-500/30 rounded-xl px-6 py-4 w-full max-w-md hover:bg-amber-50/50 hover:border-amber-500/50 transition-all duration-300 shadow-md">
             <a
-              href="https://www.facebook.com/profile.php?id=61558311322107"
+              href="https://www.google.com/maps/dir//36J7%2B453+Aniyal+East+Road,+East+road,+Edavanakkad,+Kochi,+Kerala+682502/@10.0803023,76.1305356,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3b081112a6042e7f:0xa152d0bcf7085ae5!2m2!1d76.2129375!2d10.0803125?entry=ttu"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 bg-white border border-amber-500/30 text-amber-600 hover:text-white hover:bg-amber-500 hover:border-amber-500 rounded-lg px-6 py-3 transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto"
-              aria-label="Facebook Page"
+              className="flex items-center justify-center group"
             >
-              <FaFacebook className="text-xl flex-shrink-0" />
-              <span className="font-medium">Facebook</span>
+              <div className="bg-amber-500/10 p-3 rounded-full mr-4 group-hover:bg-amber-500/20 transition-colors duration-200">
+                <FiMapPin className="text-amber-600 text-xl" />
+              </div>
+              <div>
+                <p className="text-xs text-slate-500 uppercase tracking-wide mb-1">
+                  Location
+                </p>
+                <p className="text-slate-800 font-medium text-lg group-hover:text-amber-600 transition-colors duration-200">
+                  Edavannakad, Kochi, Kerala
+                </p>
+              </div>
             </a>
-            <a
-              href="https://www.facebook.com/groups/446332617847433"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 bg-white border border-amber-500/30 text-amber-600 hover:text-white hover:bg-amber-500 hover:border-amber-500 rounded-lg px-6 py-3 transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto"
-              aria-label="Facebook Group"
-            >
-              <MdGroups className="text-xl flex-shrink-0" />
-              <span className="font-medium">Facebook Group</span>
-            </a>
-            <a
-              href="https://chat.whatsapp.com/E7qlpeEZ5Cv0FqEfmqErB2?mode=gi_t"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 bg-white border border-amber-500/30 text-amber-600 hover:text-white hover:bg-amber-500 hover:border-amber-500 rounded-lg px-6 py-3 transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto"
-              aria-label="WhatsApp Group"
-            >
-              <FaWhatsapp className="text-xl flex-shrink-0" />
-              <span className="font-medium">WhatsApp Group</span>
-            </a>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex flex-col items-center space-y-3 w-full max-w-md">
+            <p className="text-sm text-slate-600 uppercase tracking-wide">
+              Follow Us
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 w-full">
+              <a
+                href="https://www.facebook.com/profile.php?id=61558311322107"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 bg-white border border-amber-500/30 text-amber-600 hover:text-white hover:bg-amber-500 hover:border-amber-500 rounded-lg px-6 py-3 transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto"
+                aria-label="Facebook Page"
+              >
+                <FaFacebook className="text-xl flex-shrink-0" />
+                <span className="font-medium">Facebook</span>
+              </a>
+              <a
+                href="https://www.facebook.com/groups/446332617847433"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 bg-white border border-amber-500/30 text-amber-600 hover:text-white hover:bg-amber-500 hover:border-amber-500 rounded-lg px-6 py-3 transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto"
+                aria-label="Facebook Group"
+              >
+                <MdGroups className="text-xl flex-shrink-0" />
+                <span className="font-medium">Facebook Group</span>
+              </a>
+              <a
+                href="https://chat.whatsapp.com/E7qlpeEZ5Cv0FqEfmqErB2?mode=gi_t"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 bg-white border border-amber-500/30 text-amber-600 hover:text-white hover:bg-amber-500 hover:border-amber-500 rounded-lg px-6 py-3 transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto"
+                aria-label="WhatsApp Group"
+              >
+                <FaWhatsapp className="text-xl flex-shrink-0" />
+                <span className="font-medium">WhatsApp Group</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Right Image Section */}
-      <div className="lg:w-1/2 flex justify-center items-center lg:mt-0 mt-8">
-        <div className="relative w-full max-w-md lg:max-w-lg group">
-          <div className="absolute -inset-4 bg-amber-500/20 rounded-2xl blur-xl group-hover:bg-amber-500/30 transition-all duration-300"></div>
-          <img
-            src="https://scontent.fcok1-1.fna.fbcdn.net/v/t39.30808-1/434759652_122100653816266533_4818696604508498561_n.jpg?stp=c147.0.785.785a_dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Ic40wxOXGM8Q7kNvwF3RorV&_nc_oc=AdmzUM0NALMkF6zI4AZi5ebeYKUo8YeomzlEuKF0Y10MdkMF3EwiCuRMqjcrY_cV0Ndm1Tl-hwET0SFQReFhrfba&_nc_zt=24&_nc_ht=scontent.fcok1-1.fna&_nc_gid=inh5XkWu0M0JkAKfyGtHCw&oh=00_AfrJ9R328cKvZni2EUFpY2-fULG1cqAPNqtn14EB6rPivg&oe=697A82AF"
-            alt="Aniyil Sreekrishna Swami Temple"
-            className="relative w-full h-auto rounded-2xl shadow-2xl object-cover border-2 border-amber-500/20 group-hover:border-amber-500/40 transition-all duration-300"
-          />
+      {/* Bottom Images Section - Two Images Side by Side */}
+      <div className="lg:px-20 px-6 lg:py-8 py-8 flex justify-center items-center">
+        <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          {/* New Cloudinary Image - Left Side */}
+          <div className="relative w-full group">
+            <div className="absolute -inset-4 bg-amber-500/20 rounded-2xl blur-xl group-hover:bg-amber-500/30 transition-all duration-300"></div>
+            <img
+              src="https://res.cloudinary.com/dzp2jazw9/image/upload/v1769313557/Guruvayur-Temple-Timings_op4omb.webp"
+              alt="Aniyil Sreekrishna Swami Temple"
+              className="relative w-full h-[400px] lg:h-[450px] rounded-2xl shadow-2xl object-cover border-2 border-amber-500/20 group-hover:border-amber-500/40 transition-all duration-300"
+            />
+          </div>
+
+          {/* Existing Temple Image - Right Side */}
+          <div className="relative w-full group">
+            <div className="absolute -inset-4 bg-amber-500/20 rounded-2xl blur-xl group-hover:bg-amber-500/30 transition-all duration-300"></div>
+            <img
+              src="https://scontent.fcok1-1.fna.fbcdn.net/v/t39.30808-1/434759652_122100653816266533_4818696604508498561_n.jpg?stp=c147.0.785.785a_dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Ic40wxOXGM8Q7kNvwF3RorV&_nc_oc=AdmzUM0NALMkF6zI4AZi5ebeYKUo8YeomzlEuKF0Y10MdkMF3EwiCuRMqjcrY_cV0Ndm1Tl-hwET0SFQReFhrfba&_nc_zt=24&_nc_ht=scontent.fcok1-1.fna&_nc_gid=inh5XkWu0M0JkAKfyGtHCw&oh=00_AfrJ9R328cKvZni2EUFpY2-fULG1cqAPNqtn14EB6rPivg&oe=697A82AF"
+              alt="Aniyil Sreekrishna Swami Temple"
+              className="relative w-full h-[400px] lg:h-[450px] rounded-2xl shadow-2xl object-cover border-2 border-amber-500/20 group-hover:border-amber-500/40 transition-all duration-300"
+            />
+          </div>
         </div>
       </div>
     </div>
