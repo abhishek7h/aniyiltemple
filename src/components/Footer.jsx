@@ -73,7 +73,7 @@ const Footer = () => {
                 reserved.
               </p>
               <p className="text-center md:text-right">
-                Managed by{" "}
+                Website managed by{" "}
                 <a
                   href="https://abhishekhari.com"
                   target="_blank"

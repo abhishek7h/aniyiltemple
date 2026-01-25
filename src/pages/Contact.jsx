@@ -84,13 +84,13 @@ const Contact = () => {
                   </p>
                 </div>
                 <p className="text-slate-800 text-lg font-medium mb-1">
-                  Mr. Sathyan Manapilli
+                  Mr. Jayaseelan Manapilli
                 </p>
                 <a
                   href="tel:9745985838"
                   className="text-amber-600 hover:text-amber-700 transition-colors duration-200"
                 >
-                  +91 97459 85838
+                  +91 94473 79789
                 </a>
               </div>
               <div className="bg-amber-50/30 rounded-lg p-4 border border-amber-500/20">
@@ -101,13 +101,13 @@ const Contact = () => {
                   </p>
                 </div>
                 <p className="text-slate-800 text-lg font-medium mb-1">
-                  Mr. K.S. Krishna Kumar
+                  Mr. Sinoj Thachangad
                 </p>
                 <a
                   href="tel:9446515640"
                   className="text-amber-600 hover:text-amber-700 transition-colors duration-200"
                 >
-                  +91 94465 15640
+                  +91 85478 27139
                 </a>
               </div>
             </div>
