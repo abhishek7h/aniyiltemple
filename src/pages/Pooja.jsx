@@ -1,15 +1,14 @@
 const Pooja = () => {
   return (
-    <div className="flex flex-col items-center mt-10 text-slate-800 text-2xl font-malayalam leading-relaxed">
-      <div className="flex flex-col mb-6 shadow-lg">
-        <div className="block bg-transparent p-4 w-full overflow-x-auto">
+    <div className="min-h-screen">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
           <div className="mb-12">
             <h1 className="text-4xl lg:text-6xl mb-4 flex items-center justify-center font-bold leading-tight text-amber-500 text-center">
               പൂജ സമയങ്ങൾ
             </h1>
             <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
           </div>
-          <div className="overflow-x-auto rounded-lg shadow-lg">
+          <div className="overflow-x-auto rounded-lg">
             <table className="w-full border-collapse bg-white shadow-md">
               <thead>
                 <tr className="bg-amber-500/20 border-b-2 border-amber-500/40">
@@ -173,7 +172,6 @@ const Pooja = () => {
               </li>
             </ul>
           </div>
-        </div>
       </div>
     </div>
   );

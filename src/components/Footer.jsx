@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="w-full h-px bg-gradient-to-r from-transparent via-amber-500/50 to-transparent mt-20"></div>
       )}
       
-      <footer className={`bg-white/80 backdrop-blur-sm border-t border-amber-500/20 text-slate-800 ${isHomePage ? "mt-20" : ""}`}>
+      <footer className={`bg-white/80 backdrop-blur-sm ${isHomePage ? "mt-20" : "border-t border-amber-500/20"} text-slate-800`}>
         <div className="container mx-auto px-6 py-8 md:py-10">
           {!isHomePage && (
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
