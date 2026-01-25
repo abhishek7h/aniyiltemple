@@ -168,7 +168,7 @@ const Hero = () => {
           <div className="relative w-full group">
             <div className="absolute -inset-4 bg-amber-500/20 rounded-2xl blur-xl group-hover:bg-amber-500/30 transition-all duration-300"></div>
             <img
-              src="https://scontent.fcok1-1.fna.fbcdn.net/v/t39.30808-1/434759652_122100653816266533_4818696604508498561_n.jpg?stp=c147.0.785.785a_dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Ic40wxOXGM8Q7kNvwF3RorV&_nc_oc=AdmzUM0NALMkF6zI4AZi5ebeYKUo8YeomzlEuKF0Y10MdkMF3EwiCuRMqjcrY_cV0Ndm1Tl-hwET0SFQReFhrfba&_nc_zt=24&_nc_ht=scontent.fcok1-1.fna&_nc_gid=inh5XkWu0M0JkAKfyGtHCw&oh=00_AfrJ9R328cKvZni2EUFpY2-fULG1cqAPNqtn14EB6rPivg&oe=697A82AF"
+              src="https://res.cloudinary.com/dzp2jazw9/image/upload/v1769321554/WhatsApp_Image_2026-01-25_at_11.34.21_vtm3au.jpg"
               alt="Aniyil Sreekrishna Swami Temple"
               className="relative w-full h-[400px] lg:h-[450px] rounded-2xl shadow-2xl object-cover border-2 border-amber-500/20 group-hover:border-amber-500/40 transition-all duration-300"
             />
