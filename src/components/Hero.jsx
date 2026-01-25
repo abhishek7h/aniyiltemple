@@ -124,7 +124,7 @@ const Hero = () => {
                 aria-label="Facebook Page"
               >
                 <FaFacebook className="text-xl flex-shrink-0" />
-                <span className="font-medium">Facebook</span>
+                <span className="font-medium">Facebook Page</span>
               </a>
               <a
                 href="https://www.facebook.com/groups/446332617847433"
